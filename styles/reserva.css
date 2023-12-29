@@ -121,9 +121,58 @@ header .active {
 .vista-uno .container .right .redes a:hover {
   scale: 105%;
 }
+/* Vista Dos */
+.vista-dos{
+    background: url(/assets/contacto-img/debbie-tea-LO7rNP0LRro-unsplash.jpg)
+    no-repeat;
+  padding: 40px 80px;
+  background-size: cover;
+  background-position: center;
+}
+.vista-dos .container{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(000, 000, 000, .7);
+    padding: 40px;
+}
+.vista-dos .container h2{
+    font-size: 1.8em;
+    color: #9e8d77;
+}
+.vista-dos .container p {
+    color: white;
+    margin-bottom: 40px;
+  }
+  .vista-dos .container b{
+    color: #9e8d77;
+  }
+  .vista-dos .container iframe{
+    height: 300px;
+  }
+  .vista-dos .contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .vista-dos .contenedor .left{
+    width: 50%;
+    margin-top: 40px;
+  }
+  .contenedor .redes{
+    display: flex;
+  }
+  .contenedor .redes a{
+    margin: 0 40px;
+    font-size: 3em;
+    color: white;
+    transition: 1s;
+  }
+  .contenedor .redes a:hover{
+    scale: 105%;
+  }
 /* Footer */
 footer {
-  margin-top: 40px;
+  margin-top: 0;
   background-color: #1f1b17;
   padding: 40px;
   color: white;
@@ -257,5 +306,31 @@ footer p {
   }
   .vista-uno .container .right .redes a:hover {
     scale: 105%;
+  }
+  /* Vista Dos */
+.vista-dos{
+  padding: 10px 5px;
+}
+.vista-dos .container{
+    padding: 20px;
+}
+.vista-dos .container h2{
+    font-size: 1.6em;
+}
+.vista-dos .container p {
+    font-size: .9em;
+  }
+  .vista-dos .contenedor{
+    flex-direction: column;
+  }
+  .vista-dos .contenedor .left{
+    width: 95%;
+  }
+  .contenedor .redes{
+    display: flex;
+  }
+  .contenedor .redes a{
+    margin: 0 20px;
+    font-size: 2em;
   }
 }
