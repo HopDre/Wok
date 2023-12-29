@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* ------------------------header----------------------- */
+header {
+  position: relative;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+.head {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+header img {
+  width: 8%;
+}
+li {
+  list-style-type: none;
+}
+header a {
+  text-decoration: none;
+  color: #253532;
+  font-size: 1.3em;
+  transition: 1s;
+}
+header a:hover {
+  font-size: 1.35em;
+  color: #9e8d77;
+}
+header .active {
+  font-weight: bold;
+  color: #9e8d77;
+}
+.head .links {
+  display: flex;
+  gap: 80px;
+}
+.head .btn-menu {
+  color: #9e8d77;
+  font-size: 1.5em;
+  cursor: pointer;
+  display: none;
+}
+/*Dropdown menu*/
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100px;
+  height: 0;
+  left: 10px;
+  width: 100%;
+  background-color: black;
+  overflow: hidden;
+  transition: height 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 100;
+}
+.dropdown-menu.open {
+  height: 350px;
+}
+.dropdown-menu li {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.vista-uno {
+  background: url(/assets/contacto-img/debbie-tea-LO7rNP0LRro-unsplash.jpg)
+    no-repeat;
+  padding: 40px 80px;
+  background-size: cover;
+  background-position: center;
+}
+.vista-uno .container {
+  display: flex;
+  background-color: #0000009c;
+  padding: 40px;
+  align-items: center;
+}
+.vista-uno .container .left h2 {
+  color: #9e8d77;
+  font-size: 1.8em;
+}
+.vista-uno .container .left p {
+  color: white;
+  margin-bottom: 30px;
+}
+.vista-uno .container .left {
+  width: 50%;
+  margin: 20px;
+}
+.vista-uno .container .right {
+  width: 50%;
+  margin: 20px;
+}
+.vista-uno .container .right h2 {
+  color: #9e8d77;
+  font-size: 1.8em;
+}
+.vista-uno .container .right .redes {
+  display: flex;
+  justify-content: space-around;
+}
+.vista-uno .container .right iframe {
+  width: 100%;
+  height: 300px;
+}
+.vista-uno .container .right .redes a {
+  font-size: 2.5em;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+.vista-uno .container .right .redes a:hover {
+  scale: 105%;
+}
+/* Footer */
+footer {
+  margin-top: 40px;
+  background-color: #1f1b17;
+  padding: 40px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.foot-col-uno {
+  width: 30%;
+}
+.foot-col-uno img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+footer p {
+  margin-bottom: 10px;
+}
+.foot-col-dos {
+  width: 30%;
+}
+.foot-col-dos .links-footer {
+  margin-top: 90px;
+  display: flex;
+  flex-direction: column;
+}
+.foot-col-dos .links-footer a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  width: 150px;
+}
+.foot-col-tres {
+  width: 30%;
+}
+.foot-col-tres .links-footer {
+  margin-top: 90px;
+}
+.foot-col-tres .links-footer a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 5px;
+  font-size: 1.8em;
+}
+.foot-col-tres .redes-footer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Responsive*/
+@media (max-width: 992px) {
+  .head .links {
+    display: none;
+  }
+  header img {
+    width: 80px;
+  }
+  .head .btn-menu {
+    display: block;
+  }
+  .dropdown-menu {
+    display: block;
+  }
+  /* Footer */
+  footer {
+    flex-direction: column;
+  }
+  .foot-col-uno {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 40px;
+  }
+  .foot-col-uno img {
+    width: 70px;
+    margin-bottom: 20px;
+  }
+  footer p {
+    margin-bottom: 5px;
+  }
+  .foot-col-dos {
+    width: 95%;
+  }
+  .foot-col-dos .links-footer {
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  .foot-col-tres {
+    width: 95%;
+  }
+  .foot-col-tres .links-footer {
+    margin-top: 10px;
+  }
+  .parrafo-final {
+    font-size: 0.8em;
+  }
+  .vista-uno {
+    padding: 10px;
+  }
+  .vista-uno .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .vista-uno .container .left h2 {
+    font-size: 1.2em;
+  }
+  .vista-uno .container .left {
+    width: 90%;
+    margin: 20px;
+  }
+  .vista-uno .container .right {
+    width: 90%;
+    margin: 20px;
+  }
+  .vista-uno .container .right h2 {
+    color: #9e8d77;
+    font-size: 1.2em;
+  }
+  .vista-uno .container .right .redes {
+    display: flex;
+    justify-content: space-around;
+  }
+  .vista-uno .container .right iframe {
+    width: 100%;
+    height: 300px;
+  }
+  .vista-uno .container .right .redes a {
+    font-size: 2.5em;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 1s;
+  }
+  .vista-uno .container .right .redes a:hover {
+    scale: 105%;
+  }
+}
