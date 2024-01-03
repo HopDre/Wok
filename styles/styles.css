@@ -349,8 +349,6 @@ footer p{
   display: flex;
   justify-content: space-between;
 }
-
-
 /* Responsive*/
 @media (max-width: 992px) {
   .head .links {
