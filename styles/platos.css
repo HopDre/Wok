@@ -215,6 +215,8 @@ footer{
   .parrafo-final{
     display: flex;
     justify-content: space-between;
+    font-size: .8em;
+    margin: 5px 10px;
   }
 
 
