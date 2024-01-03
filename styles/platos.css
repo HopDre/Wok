@@ -212,6 +212,10 @@ footer{
     display: flex;
     justify-content: space-between;
   }
+  .parrafo-final{
+    display: flex;
+    justify-content: space-between;
+  }
 
 
   /* Responsive*/
@@ -258,7 +262,7 @@ footer{
     margin-top: 10px;
   }
   .parrafo-final{
-    font-size: .8em;
+    font-size: .6em;
   }
   .vista-uno{
     padding: 20px;

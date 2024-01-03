@@ -220,6 +220,10 @@ footer p {
   display: flex;
   justify-content: space-between;
 }
+.parrafo-final{
+  display: flex;
+  justify-content: space-between;
+}
 
 /* Responsive*/
 @media (max-width: 992px) {
@@ -265,7 +269,7 @@ footer p {
     margin-top: 10px;
   }
   .parrafo-final {
-    font-size: 0.8em;
+    font-size: 0.6em;
   }
   .vista-uno {
     padding: 10px;

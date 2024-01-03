@@ -345,6 +345,10 @@ footer p{
   display: flex;
   justify-content: space-between;
 }
+.parrafo-final{
+  display: flex;
+  justify-content: space-between;
+}
 
 
 /* Responsive*/
@@ -459,6 +463,6 @@ footer p{
     margin-top: 10px;
   }
   .parrafo-final{
-    font-size: .8em;
+    font-size: .6em;
   }
 }
